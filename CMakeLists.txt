@@ -9,17 +9,23 @@ if(CMAKE_COMPILER_IS_GNUCXX)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 endif(CMAKE_COMPILER_IS_GNUCXX)
 
-# the static library
+# Gauche
+option(CPPOTP_BUILD_GAUCHE "Build gauche" OFF)
+
+# CPPOTP Library
 add_library(cppotp STATIC
 	src/libcppotp/bytes.cpp
 	src/libcppotp/otp.cpp
 	src/libcppotp/sha1.cpp
 )
 
-# the binary
-add_executable(gauche
-	src/gauche.cpp
-)
-target_link_libraries(gauche
-	cppotp
-)
+# Binary
+if(CPPOTP_BUILD_GAUCHE)
+	add_executable(gauche
+		src/gauche.cpp
+	)
+	
+	target_link_libraries(gauche
+		cppotp
+	)
+endif()
