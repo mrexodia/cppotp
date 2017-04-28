@@ -19,6 +19,8 @@ add_library(cppotp STATIC
 	src/libcppotp/sha1.cpp
 )
 
+target_include_directories(cppotp PUBLIC src/)
+
 # Binary
 if(CPPOTP_BUILD_GAUCHE)
 	add_executable(gauche
