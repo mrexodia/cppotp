@@ -15,8 +15,11 @@ option(CPPOTP_BUILD_GAUCHE "Build gauche" OFF)
 # CPPOTP Library
 add_library(cppotp STATIC
 	src/libcppotp/bytes.cpp
+	src/libcppotp/bytes.h
 	src/libcppotp/otp.cpp
+	src/libcppotp/otp.h
 	src/libcppotp/sha1.cpp
+	src/libcppotp/sha1.h
 )
 
 target_include_directories(cppotp PUBLIC src/)
