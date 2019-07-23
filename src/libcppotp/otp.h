@@ -7,15 +7,15 @@
  * see the file COPYING for more details.
  */
 
-#ifndef __CPPTOTP_OTP_H__
-#define __CPPTOTP_OTP_H__
+#ifndef CPPOTP_OTP_H
+#define CPPOTP_OTP_H
 
 #include "bytes.h"
 #include "sha1.h"
 
 #include <cstdint>
 
-namespace CppTotp
+namespace CppOtp
 {
 
 /** The 64-bit-blocksize variant of HMAC-SHA1. */

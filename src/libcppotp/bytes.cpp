@@ -15,7 +15,7 @@
 #include <cassert>
 #include <cstdlib>
 
-namespace CppTotp
+namespace CppOtp
 {
 namespace Bytes
 {

@@ -13,7 +13,7 @@
 
 #include <cassert>
 
-namespace CppTotp
+namespace CppOtp
 {
 
 static inline uint32_t lrot32(uint32_t num, uint8_t rotcount)

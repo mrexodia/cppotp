@@ -15,7 +15,7 @@
 #include <cinttypes>
 #include <cstring>
 
-namespace CppTotp
+namespace CppOtp
 {
 
 Bytes::ByteString hmacSha1_64(const Bytes::ByteString & key, const Bytes::ByteString & msg)

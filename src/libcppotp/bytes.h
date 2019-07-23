@@ -7,14 +7,14 @@
  * see the file COPYING for more details.
  */
 
-#ifndef __CPPTOTP_BYTES_H__
-#define __CPPTOTP_BYTES_H__
+#ifndef CPPOTP_BYTES_H
+#define CPPOTP_BYTES_H
 
 #include <string>
 
 #include <cstdint>
 
-namespace CppTotp
+namespace CppOtp
 {
 namespace Bytes
 {

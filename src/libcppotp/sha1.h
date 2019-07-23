@@ -7,12 +7,12 @@
  * see the file COPYING for more details.
  */
 
-#ifndef __CPPTOTP_SHA1_H__
-#define __CPPTOTP_SHA1_H__
+#ifndef CPPOTP_SHA1_H
+#define CPPOTP_SHA1_H
 
 #include "bytes.h"
 
-namespace CppTotp
+namespace CppOtp
 {
 
 typedef Bytes::ByteString (*HmacFunc)(const Bytes::ByteString &, const Bytes::ByteString &);
